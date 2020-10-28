@@ -1,0 +1,15 @@
+{
+  "modules": {
+    "config": {
+      "module": "./modules/config"
+      "dependencies": ["logger"]
+    },
+    "logger": {
+      "module": "./modules/logger",
+      "dependencies": ["config"]
+    },
+    "handler": {
+      "module": "./modules/handler",
+      "dependencies": ["config", "logger"]
+    }
+}
