@@ -5,7 +5,7 @@ import { Handler } from './handler.service';
 export class AppController {
   constructor(private readonly handler: Handler) {}
 
-  @Get()
+  @Get('config')
   getConfig(): string {
     return this.handler.getConfig();
   }

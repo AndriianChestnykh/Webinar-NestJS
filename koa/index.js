@@ -5,7 +5,11 @@ const Handler = require('./handler');
 const handler = new Handler();
 
 app.use(async ctx => {
-  ctx.body = handler.getConfig();
+  if (ctx.request.url === '/config') {
+    ctx.body = handler.getConfig();
+  } else {
+    ctx.throw(404, 'Not found!');
+  }
 });
 
 app.listen(3000);
