@@ -1,0 +1,15 @@
+{
+  "name": "koa-test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andriian Chestnykh <chester_and@hotmail.com>",
+  "license": "ISC"
+}
