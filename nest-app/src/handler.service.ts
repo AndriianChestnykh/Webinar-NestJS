@@ -10,8 +10,8 @@ export class Handler {
   ) {}
 
   public getConfig(): string {
-    let config = this.configuration.getConfig();
-    this.logger.log(`Got request for configuraion. Returning: ${config}`);
+    const config = this.configuration.getConfig();
+    this.logger.log(`Got request for configuration. Returning: ${config}`);
     return JSON.stringify(config);
   }
 }
