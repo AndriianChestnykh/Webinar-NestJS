@@ -12,8 +12,8 @@ export class Configuration {
         this.environment = process.env.environment;
     }
 
-    public getConfig(): {} {
-        let config = {
+    public getConfig(): {[s: string]: any} {
+        const config = {
             appName: 'Test Nest.JS app',
             environment: this.environment
         };

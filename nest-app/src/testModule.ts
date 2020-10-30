@@ -2,7 +2,7 @@ import {forwardRef, Inject, Injectable} from '@nestjs/common';
 import {Configuration} from "./configuration";
 
 @Injectable()
-export class Logger {
+export class TestModule {
     private shouldLog: boolean;
 
     constructor(
@@ -12,7 +12,7 @@ export class Logger {
         this.shouldLog = this.configuration.getConfig().environment === 'debug';
     }
 
-    public log(str: string) {
+    public testMethod(str: string) {
         if (this.shouldLog) {
             console.log(str);
         }

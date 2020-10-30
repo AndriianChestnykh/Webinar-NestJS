@@ -7,7 +7,8 @@ export class Handler {
   constructor (
       private configuration: Configuration,
       private logger: Logger
-  ) {}
+  ) {
+  }
 
   public getConfig(): string {
     const config = this.configuration.getConfig();

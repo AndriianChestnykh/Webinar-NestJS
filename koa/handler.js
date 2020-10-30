@@ -1,11 +1,12 @@
 const Configuration = require('./configuration');
 const Logger = require('./logger');
 
-module.exports = class AppService {
+module.exports = class Handler {
   constructor() {
     this.configuration = new Configuration();
     this.logger = new Logger(this.configuration);
     this.configuration.setLogger(this.logger);
+    this.testModule(this.configuration);
   }
 
   getConfig() {
